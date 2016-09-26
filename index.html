@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = 'styles/styles.css'>
+		<script src = "js/jquery.js"></script>
+		<script src = "js/events.js"></script>
+		<script src = "js/bestFlattener.js"></script>
+	</head>
+
+	<body>
+		<h1>The Flattener</h1>
+		<h2>Flatten an array</h2>
+
+		<p class = 'clickableItem' onclick = 'flattenSelectedArray([1, [2, 3], 4])'>[1, [2, 3], 4]</p>
+		<p class = 'clickableItem' onclick = 'flattenSelectedArray([1, [2, [3, 4], 5, [6]]])'>[1, [2, [3, 4], 5, [6]]</p>
+		<p class = 'clickableItem' onclick = 'flattenSelectedArray([1, [2, 3], 4, 5, [6, 7, [8, 9]]])'>[1, [2, 3], 4, 5, [6, 7, [8, 9]]]</p>
+		
+		<div id="output">
+			<p></p>
+		</div>
+	</body>
+</html>
